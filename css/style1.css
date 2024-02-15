@@ -1,0 +1,29 @@
+       .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid #ccc; /* Add border around slideshow */
+            overflow: hidden; /* Hide overflowing content */
+        }
+        .mySlides {
+            display: none;
+        }
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Maintain aspect ratio */
+            border: 2px solid #fff; /* Add border around images */
+        }
+        /* Add animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {
+                opacity: .4;
+            }
+            to {
+                opacity: 1;
+            }
+        }
